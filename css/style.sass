@@ -1,0 +1,509 @@
+/* font-family: "MyriadProRegular" */
+@font-face
+  font-family: "MyriadProRegular"
+  src: url("../fonts/MyriadPro/MyriadProRegular.eot")
+  src: url("../fonts/MyriadPro/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadPro/MyriadProRegular.ttf") format("truetype")
+  font-style: normal
+  font-weight: normal
+
+/* font-family: "HelveticaNeue Regular" */
+@font-face
+  font-family: 'Helvetica Neue'
+  src: url('../fonts/HelveticaNeue/HelveticaNeue.eot')
+  src: url('../fonts/HelveticaNeue/HelveticaNeue.woff') format('woff'), url('../fonts/HelveticaNeue/HelveticaNeue.ttf') format('truetype')
+  font-style: normal
+  font-weight: normal
+
+/* font-family: "HelveticaNeue Bold" */
+@font-face
+  font-family: 'Helvetica Neue'
+  src: url('../fonts/HelveticaNeue/HelveticaNeue-Bold.eot')
+  src: url('../fonts/HelveticaNeue/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeue/HelveticaNeue-Bold.woff2') format('woff2'), url('../fonts/HelveticaNeue/HelveticaNeue-Bold.woff') format('woff'), url('../fonts/HelveticaNeue/HelveticaNeue-Bold.ttf') format('truetype')
+  font-weight: bold
+  font-style: normal
+  font-display: swap
+
+/* font-family: "ProximaNova Regular" */
+@font-face
+  font-family: 'Proxima Nova Rg'
+  src: url('../fonts/ProximaNova/ProximaNova-Regular.eot')
+  src: local('Proxima Nova Regular'), local('ProximaNova-Regular'), url('../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova/ProximaNova-Regular.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
+
+/* font-family: "ProximaNova SemiBold" */
+@font-face
+  font-family: 'Proxima Nova Lt'
+  src: url('../fonts/ProximaNova/ProximaNova-Semibold.eot')
+  src: local('Proxima Nova Semibold'), local('ProximaNova-Semibold'), url('../fonts/ProximaNova/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova/ProximaNova-Semibold.woff') format('woff'), url('../fonts/ProximaNova/ProximaNova-Semibold.ttf') format('truetype')
+  font-weight: 600
+  font-style: normal
+
+/* font-family: "ProximaNova Bold" */
+@font-face
+  font-family: 'Proxima Nova Rg'
+  src: url('../fonts/ProximaNova/ProximaNova-Bold.eot')
+  src: local('../fonts/ProximaNova/Proxima Nova Bold'), local('ProximaNova-Bold'), url('../fonts/ProximaNova/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova/ProximaNova-Bold.woff') format('woff'), url('../fonts/ProximaNova/ProximaNova-Bold.ttf') format('truetype')
+  font-weight: bold
+  font-style: normal
+
+/* font-family: "Tahoma Regular" */
+@font-face
+  font-family: 'Tahoma'
+  src: url('../fonts/Tahoma/Tahoma.eot')
+  src: local('Tahoma'), url('../fonts/Tahoma/Tahoma.eot?#iefix') format('embedded-opentype'), url('../fonts/Tahoma/Tahoma.woff') format('woff'), url('../fonts/Tahoma/Tahoma.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
+
+@mixin max-screen($res)
+  @media screen and (max-width: $res)
+    @content
+
+*
+  margin: 0
+  padding: 0
+
+body
+  background-image: url("../images/bg-shape-top_01.png")
+  background-repeat: no-repeat
+  background-color: #fafafa
+  position: relative
+
+  &:before
+    content: ""
+    display: inline-block
+    background-image: url("../images/bg-shape-bottom_03.png")
+    width: 233px
+    height: 406px
+    background-repeat: no-repeat
+    position: absolute
+    bottom: 56px
+    right: 0
+
+.main_block
+  .container
+    max-width: 936px
+    margin: auto
+
+  /*Start block Profile*/
+  .profile
+    background-color: rgba(255, 255, 255, .6)
+    padding-top: 16px
+
+    .profile_wrapper
+      display: flex
+      align-items: center
+      padding-left: 70px
+      @include max-screen(450px)
+        padding-left: 30px
+        align-items: stretch
+      @include max-screen(360px)
+        padding-left: 20px
+
+      .logo
+        margin-right: 108px
+        @include max-screen(450px)
+          margin-right: 30px
+        @include max-screen(360px)
+          margin-right: 20px
+
+        img
+          display: inline-block
+          width: 100%
+
+      .monblaproject
+        .title_and_date
+          display: flex
+          flex-wrap: wrap
+          align-items: center
+          margin-bottom: 22px
+          @include max-screen(375px)
+            margin-bottom: 15px
+
+          h1
+            display: inline-block
+            font-family: "MyriadProRegular"
+            font-size: 35px
+            color: #262626
+            margin-right: 20px
+            @include max-screen(450px)
+              margin-bottom: 10px
+            @include max-screen(375px)
+              font-size: 30px
+
+          input
+            display: inline-block
+            width: 150px
+            background-color: transparent
+            border: solid 1px #4090db
+            border-radius: 4px
+            color: #4090db
+            line-height: 29px
+            padding-left: 11px
+
+        .stats
+          margin-bottom: 30px
+          @include max-screen(450px)
+            margin-bottom: 15px
+
+          p
+            display: inline-block
+            font-family: 'Proxima Nova Rg'
+            font-size: 17px
+            color: #3d4044
+            margin-right: 30px
+            @include max-screen(360px)
+              font-size: 16px
+            @include max-screen(320px)
+              font-size: 14px
+
+            &:last-of-type
+              margin-right: 0
+
+            span
+              font-weight: bold
+
+        .date
+          label
+            font-family: 'Tahoma'
+            font-size: 17px
+            color: #262626
+            margin-right: 14px
+
+          input
+            display: inline-block
+            background-color: #fff
+            border: solid 1px #cccccc
+            border-radius: 4px
+            line-height: 30px
+            padding-left: 8px
+            margin: 0 12px 35px
+            width: 183px
+            @include max-screen(450px)
+              margin: 0 0 35px
+            @include max-screen(375px)
+              width: 165px
+            @include max-screen(320px)
+              width: 135px
+
+            &:first-of-type
+              margin-left: 0
+              @include max-screen(450px)
+                margin-bottom: 15px
+
+            &:last-of-type
+              margin-right: 0
+              @include max-screen(640px)
+                margin-left: 54px
+
+  /*End block Profile*/
+
+  /*Start block ListMode*/
+
+  .list_mode
+    padding-top: 20px
+
+    .ui-tabs
+      padding: 0 !important
+
+    .ui-tabs
+      .ui-tabs-nav
+        padding: 0 !important
+
+        li
+          margin: 0
+
+      .ui-tabs-anchor
+        padding: 0
+
+      .ui-tabs-panel
+        padding: 0
+
+    .ui-widget-header
+      border: 0
+      background-color: transparent
+
+    .ui-widget-content
+      border: 0
+      background-color: transparent
+
+
+    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default
+      border: 0
+      background-color: transparent
+
+    .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active
+      border: 0
+      background-color: transparent
+      color: #3b8ede
+      outline: none
+
+    .ui-corner-all
+      border-radius: 0
+
+    .ui-widget-header
+      background-color: transparent
+      color: #cccccc
+
+    .tabs_items
+      display: flex
+      justify-content: flex-end
+
+      .tabs_item
+        text-decoration: none
+        margin: 0 11px 27px
+
+        &.tabs_item_list:before, &.tabs_item_grid:before
+          content: "\f03a"
+          display: inline-block
+          font-family: Font Awesome\ 5 Free
+          font-weight: 900
+          color: #cccccc
+          font-size: 25px
+
+        &.tabs_item_grid:before
+          content: "\f00a"
+          margin-right: 0
+
+        &:hover:before
+          color: #3b8ede
+          transition: 1s all
+
+    .tabs_body
+      .tabs_content
+
+        /*Start tab1*/
+
+        .grid_mode_cards
+          display: flex
+          justify-content: space-between
+          flex-wrap: wrap
+          margin-bottom: 15px
+          @include max-screen(768px)
+            justify-content: space-around
+
+          .grid_mode_card
+            margin-bottom: 30px
+
+            .grid_mode_card_img
+              position: relative
+              overflow: hidden
+
+              &:hover .grid_mode_card_info
+                display: block
+
+              img
+                width: 100%
+
+              i
+                font-size: 23px
+                color: #f2f2f2
+                position: absolute
+                right: 10px
+                top: 15px
+
+              .grid_mode_card_info
+                background-color: rgba(0, 0, 0, .5)
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                padding: 159px 0 16px
+                display: none
+                @include max-screen(450px)
+                  padding: 162px 0 16px
+
+                .today_stats, .earlier_stats
+                  display: flex
+                  justify-content: space-between
+                  padding-left: 20px
+                  padding-right: 20px
+
+                  h5
+                    font-family: 'Proxima Nova Rg'
+                    font-size: 17px
+                    color: #fff
+
+                  span
+                    font-family: 'Proxima Nova Lt'
+                    font-size: 17px
+                    font-weight: 600
+                    color: #fff
+                    margin-right: 29px
+
+                    &:last-child
+                      margin-right: 0
+
+                    &:before
+                      content: "\f004"
+                      font-family: Font Awesome\ 5 Free
+                      font-weight: 900
+                      font-size: 20px
+                      color: #fff
+                      margin-right: 6px
+                      @include max-screen(450px)
+                        font-size: 16px
+                      @include max-screen(375px)
+                        font-size: 14px
+
+                    &:nth-child(odd):before
+                      content: "\f075"
+
+                    &.video:before
+                      content: "\f04b"
+
+                .today_stats
+                  margin-bottom: 22px
+
+                .earlier_stats
+                  margin-bottom: 28px
+
+                p
+                  font-family: 'Proxima Nova Lt'
+                  font-size: 17px
+                  font-weight: 600
+                  color: #fff
+                  text-align: center
+
+        /*End tab1*/
+
+        /*Start tab2*/
+
+
+
+
+        .list_mode_cards
+          margin-bottom: 45px
+
+          .list_mode_card
+            background-color: #fff
+            margin-bottom: 10px
+            padding-right: 92px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            @include max-screen(640px)
+              padding-right: 50px
+            @include max-screen(450px)
+              padding-right: 20px
+            @include max-screen(375px)
+              padding-right: 10px
+            @include max-screen(360px)
+              padding-right: 5px
+
+            .list_mode_card_img
+              display: flex
+              align-items: center
+
+              img
+                display: inline-block
+                width: 100%
+
+              .today_activity
+                margin-left: 35px
+                @include max-screen(450px)
+                  margin-left: 18px
+                @include max-screen(375px)
+                  margin-left: 10px
+                @include max-screen(360px)
+                  margin-left: 5px
+
+            .when_upload
+              p
+                font-family: 'Helvetica Neue'
+                font-weight: bold
+                color: #343537
+                font-size: 17px
+                @include max-screen(450px)
+                  font-size: 14px
+                @include max-screen(375px)
+                  font-size: 13px
+                @include max-screen(320px)
+                  font-size: 10px
+
+            h5
+              font-family: 'Proxima Nova Rg'
+              font-weight: 600
+              font-size: 17px
+              color: #343537
+              margin-bottom: 14px
+              @include max-screen(450px)
+                margin-right: 10px
+                margin-bottom: 10px
+                font-size: 14px
+              @include max-screen(375px)
+                font-size: 13px
+              @include max-screen(360px)
+                font-size: 12px
+              @include max-screen(320px)
+                font-size: 10px
+
+            span
+              font-family: 'Proxima Nova Rg'
+              font-weight: bold
+              font-size: 17px
+              color: #343537
+              margin-right: 30px
+              @include max-screen(450px)
+                font-size: 14px
+              @include max-screen(375px)
+                font-size: 13px
+              @include max-screen(320px)
+                font-size: 10px
+
+              &:before
+                content: "\f004"
+                font-family: Font Awesome\ 5 Free
+                font-weight: 900
+                font-size: 20px
+                color: #343537
+                margin-right: 6px
+                @include max-screen(450px)
+                  font-size: 16px
+                @include max-screen(375px)
+                  font-size: 14px
+
+              &:nth-child(odd):before
+                content: "\f075"
+
+    /*End tab2*/
+
+
+
+
+
+    .load_more
+      text-align: center
+
+      a
+        display: inline-block
+        font-family: 'Proxima Nova Rg'
+        font-size: 12px
+        color: #000
+        text-decoration: none
+        text-transform: uppercase
+        line-height: 30px
+        padding: 0 30px
+        background-color: transparent
+        border: solid 1px #000
+        border-radius: 10px
+        margin-bottom: 74px
+        transition: all 1s ease-in-out
+
+        &:hover
+          color: #fff
+          background-color: #000
+          transition: all 1s ease-in-out
+  /*End block ListMode*/
+
+
+
+
+
+
+
+
+
+
+
+

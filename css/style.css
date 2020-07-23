@@ -1,0 +1,444 @@
+@charset "UTF-8";
+/* font-family: "MyriadProRegular" */
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url("../fonts/MyriadPro/MyriadProRegular.eot");
+  src: url("../fonts/MyriadPro/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadPro/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "HelveticaNeue Regular" */
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue/HelveticaNeue.eot");
+  src: url("../fonts/HelveticaNeue/HelveticaNeue.woff") format("woff"), url("../fonts/HelveticaNeue/HelveticaNeue.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/* font-family: "HelveticaNeue Bold" */
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue/HelveticaNeue-Bold.eot");
+  src: url("../fonts/HelveticaNeue/HelveticaNeue-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue/HelveticaNeue-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeue/HelveticaNeue-Bold.woff") format("woff"), url("../fonts/HelveticaNeue/HelveticaNeue-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+/* font-family: "ProximaNova Regular" */
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("../fonts/ProximaNova/ProximaNova-Regular.eot");
+  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"), url("../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+/* font-family: "ProximaNova SemiBold" */
+@font-face {
+  font-family: "Proxima Nova Lt";
+  src: url("../fonts/ProximaNova/ProximaNova-Semibold.eot");
+  src: local("Proxima Nova Semibold"), local("ProximaNova-Semibold"), url("../fonts/ProximaNova/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+/* font-family: "ProximaNova Bold" */
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("../fonts/ProximaNova/ProximaNova-Bold.eot");
+  src: local("../fonts/ProximaNova/Proxima Nova Bold"), local("ProximaNova-Bold"), url("../fonts/ProximaNova/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+/* font-family: "Tahoma Regular" */
+@font-face {
+  font-family: "Tahoma";
+  src: url("../fonts/Tahoma/Tahoma.eot");
+  src: local("Tahoma"), url("../fonts/Tahoma/Tahoma.eot?#iefix") format("embedded-opentype"), url("../fonts/Tahoma/Tahoma.woff") format("woff"), url("../fonts/Tahoma/Tahoma.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-image: url("../images/bg-shape-top_01.png");
+  background-repeat: no-repeat;
+  background-color: #fafafa;
+  position: relative; }
+  body:before {
+    content: "";
+    display: inline-block;
+    background-image: url("../images/bg-shape-bottom_03.png");
+    width: 233px;
+    height: 406px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 56px;
+    right: 0; }
+
+.main_block {
+  /*Start block Profile */
+  /*End block Profile */
+  /*Start block ListMode */
+  /*End block ListMode */ }
+  .main_block .container {
+    max-width: 936px;
+    margin: auto; }
+  .main_block .profile {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding-top: 16px; }
+    .main_block .profile .profile_wrapper {
+      display: flex;
+      align-items: center;
+      padding-left: 70px; }
+      @media screen and (max-width: 450px) {
+        .main_block .profile .profile_wrapper {
+          padding-left: 30px;
+          align-items: stretch; } }
+      @media screen and (max-width: 360px) {
+        .main_block .profile .profile_wrapper {
+          padding-left: 20px; } }
+      .main_block .profile .profile_wrapper .logo {
+        margin-right: 108px; }
+        @media screen and (max-width: 450px) {
+          .main_block .profile .profile_wrapper .logo {
+            margin-right: 30px; } }
+        @media screen and (max-width: 360px) {
+          .main_block .profile .profile_wrapper .logo {
+            margin-right: 20px; } }
+        .main_block .profile .profile_wrapper .logo img {
+          display: inline-block;
+          width: 100%; }
+      .main_block .profile .profile_wrapper .monblaproject .title_and_date {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 22px; }
+        @media screen and (max-width: 375px) {
+          .main_block .profile .profile_wrapper .monblaproject .title_and_date {
+            margin-bottom: 15px; } }
+        .main_block .profile .profile_wrapper .monblaproject .title_and_date h1 {
+          display: inline-block;
+          font-family: "MyriadProRegular";
+          font-size: 35px;
+          color: #262626;
+          margin-right: 20px; }
+          @media screen and (max-width: 450px) {
+            .main_block .profile .profile_wrapper .monblaproject .title_and_date h1 {
+              margin-bottom: 10px; } }
+          @media screen and (max-width: 375px) {
+            .main_block .profile .profile_wrapper .monblaproject .title_and_date h1 {
+              font-size: 30px; } }
+        .main_block .profile .profile_wrapper .monblaproject .title_and_date input {
+          display: inline-block;
+          width: 150px;
+          background-color: transparent;
+          border: solid 1px #4090db;
+          border-radius: 4px;
+          color: #4090db;
+          line-height: 29px;
+          padding-left: 11px; }
+      .main_block .profile .profile_wrapper .monblaproject .stats {
+        margin-bottom: 30px; }
+        @media screen and (max-width: 450px) {
+          .main_block .profile .profile_wrapper .monblaproject .stats {
+            margin-bottom: 15px; } }
+        .main_block .profile .profile_wrapper .monblaproject .stats p {
+          display: inline-block;
+          font-family: "Proxima Nova Rg";
+          font-size: 17px;
+          color: #3d4044;
+          margin-right: 30px; }
+          @media screen and (max-width: 360px) {
+            .main_block .profile .profile_wrapper .monblaproject .stats p {
+              font-size: 16px; } }
+          @media screen and (max-width: 320px) {
+            .main_block .profile .profile_wrapper .monblaproject .stats p {
+              font-size: 14px; } }
+          .main_block .profile .profile_wrapper .monblaproject .stats p:last-of-type {
+            margin-right: 0; }
+          .main_block .profile .profile_wrapper .monblaproject .stats p span {
+            font-weight: bold; }
+      .main_block .profile .profile_wrapper .monblaproject .date label {
+        font-family: "Tahoma";
+        font-size: 17px;
+        color: #262626;
+        margin-right: 14px; }
+      .main_block .profile .profile_wrapper .monblaproject .date input {
+        display: inline-block;
+        background-color: #fff;
+        border: solid 1px #cccccc;
+        border-radius: 4px;
+        line-height: 30px;
+        padding-left: 8px;
+        margin: 0 12px 35px;
+        width: 183px; }
+        @media screen and (max-width: 450px) {
+          .main_block .profile .profile_wrapper .monblaproject .date input {
+            margin: 0 0 35px; } }
+        @media screen and (max-width: 375px) {
+          .main_block .profile .profile_wrapper .monblaproject .date input {
+            width: 165px; } }
+        @media screen and (max-width: 320px) {
+          .main_block .profile .profile_wrapper .monblaproject .date input {
+            width: 135px; } }
+        .main_block .profile .profile_wrapper .monblaproject .date input:first-of-type {
+          margin-left: 0; }
+          @media screen and (max-width: 450px) {
+            .main_block .profile .profile_wrapper .monblaproject .date input:first-of-type {
+              margin-bottom: 15px; } }
+        .main_block .profile .profile_wrapper .monblaproject .date input:last-of-type {
+          margin-right: 0; }
+          @media screen and (max-width: 640px) {
+            .main_block .profile .profile_wrapper .monblaproject .date input:last-of-type {
+              margin-left: 54px; } }
+  .main_block .list_mode {
+    padding-top: 20px;
+    /*End tab2 */ }
+    .main_block .list_mode .ui-tabs {
+      padding: 0 !important; }
+    .main_block .list_mode .ui-tabs .ui-tabs-nav {
+      padding: 0 !important; }
+      .main_block .list_mode .ui-tabs .ui-tabs-nav li {
+        margin: 0; }
+    .main_block .list_mode .ui-tabs .ui-tabs-anchor {
+      padding: 0; }
+    .main_block .list_mode .ui-tabs .ui-tabs-panel {
+      padding: 0; }
+    .main_block .list_mode .ui-widget-header {
+      border: 0;
+      background-color: transparent; }
+    .main_block .list_mode .ui-widget-content {
+      border: 0;
+      background-color: transparent; }
+    .main_block .list_mode .ui-state-default, .main_block .list_mode .ui-widget-content .ui-state-default, .main_block .list_mode .ui-widget-header .ui-state-default {
+      border: 0;
+      background-color: transparent; }
+    .main_block .list_mode .ui-state-active, .main_block .list_mode .ui-widget-content .ui-state-active, .main_block .list_mode .ui-widget-header .ui-state-active {
+      border: 0;
+      background-color: transparent;
+      color: #3b8ede;
+      outline: none; }
+    .main_block .list_mode .ui-corner-all {
+      border-radius: 0; }
+    .main_block .list_mode .ui-widget-header {
+      background-color: transparent;
+      color: #cccccc; }
+    .main_block .list_mode .tabs_items {
+      display: flex;
+      justify-content: flex-end; }
+      .main_block .list_mode .tabs_items .tabs_item {
+        text-decoration: none;
+        margin: 0 11px 27px; }
+        .main_block .list_mode .tabs_items .tabs_item.tabs_item_list:before, .main_block .list_mode .tabs_items .tabs_item.tabs_item_grid:before {
+          content: "";
+          display: inline-block;
+          font-family: Font Awesome\ 5 Free;
+          font-weight: 900;
+          color: #cccccc;
+          font-size: 25px; }
+        .main_block .list_mode .tabs_items .tabs_item.tabs_item_grid:before {
+          content: "";
+          margin-right: 0; }
+        .main_block .list_mode .tabs_items .tabs_item:hover:before {
+          color: #3b8ede;
+          transition: 1s all; }
+    .main_block .list_mode .tabs_body .tabs_content {
+      /*Start tab1 */
+      /*End tab1 */
+      /*Start tab2 */ }
+      .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 15px; }
+        @media screen and (max-width: 768px) {
+          .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards {
+            justify-content: space-around; } }
+        .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards .grid_mode_card {
+          margin-bottom: 30px; }
+          .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards .grid_mode_card .grid_mode_card_img {
+            position: relative;
+            overflow: hidden; }
+            .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards .grid_mode_card .grid_mode_card_img:hover .grid_mode_card_info {
+              display: block; }
+            .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards .grid_mode_card .grid_mode_card_img img {
+              width: 100%; }
+            .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards .grid_mode_card .grid_mode_card_img i {
+              font-size: 23px;
+              color: #f2f2f2;
+              position: absolute;
+              right: 10px;
+              top: 15px; }
+            .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards .grid_mode_card .grid_mode_card_img .grid_mode_card_info {
+              background-color: rgba(0, 0, 0, 0.5);
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              padding: 159px 0 16px;
+              display: none; }
+              @media screen and (max-width: 450px) {
+                .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards .grid_mode_card .grid_mode_card_img .grid_mode_card_info {
+                  padding: 162px 0 16px; } }
+              .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards .grid_mode_card .grid_mode_card_img .grid_mode_card_info .today_stats, .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards .grid_mode_card .grid_mode_card_img .grid_mode_card_info .earlier_stats {
+                display: flex;
+                justify-content: space-between;
+                padding-left: 20px;
+                padding-right: 20px; }
+                .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards .grid_mode_card .grid_mode_card_img .grid_mode_card_info .today_stats h5, .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards .grid_mode_card .grid_mode_card_img .grid_mode_card_info .earlier_stats h5 {
+                  font-family: "Proxima Nova Rg";
+                  font-size: 17px;
+                  color: #fff; }
+                .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards .grid_mode_card .grid_mode_card_img .grid_mode_card_info .today_stats span, .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards .grid_mode_card .grid_mode_card_img .grid_mode_card_info .earlier_stats span {
+                  font-family: "Proxima Nova Lt";
+                  font-size: 17px;
+                  font-weight: 600;
+                  color: #fff;
+                  margin-right: 29px; }
+                  .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards .grid_mode_card .grid_mode_card_img .grid_mode_card_info .today_stats span:last-child, .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards .grid_mode_card .grid_mode_card_img .grid_mode_card_info .earlier_stats span:last-child {
+                    margin-right: 0; }
+                  .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards .grid_mode_card .grid_mode_card_img .grid_mode_card_info .today_stats span:before, .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards .grid_mode_card .grid_mode_card_img .grid_mode_card_info .earlier_stats span:before {
+                    content: "";
+                    font-family: Font Awesome\ 5 Free;
+                    font-weight: 900;
+                    font-size: 20px;
+                    color: #fff;
+                    margin-right: 6px; }
+                    @media screen and (max-width: 450px) {
+                      .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards .grid_mode_card .grid_mode_card_img .grid_mode_card_info .today_stats span:before, .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards .grid_mode_card .grid_mode_card_img .grid_mode_card_info .earlier_stats span:before {
+                        font-size: 16px; } }
+                    @media screen and (max-width: 375px) {
+                      .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards .grid_mode_card .grid_mode_card_img .grid_mode_card_info .today_stats span:before, .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards .grid_mode_card .grid_mode_card_img .grid_mode_card_info .earlier_stats span:before {
+                        font-size: 14px; } }
+                  .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards .grid_mode_card .grid_mode_card_img .grid_mode_card_info .today_stats span:nth-child(odd):before, .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards .grid_mode_card .grid_mode_card_img .grid_mode_card_info .earlier_stats span:nth-child(odd):before {
+                    content: ""; }
+                  .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards .grid_mode_card .grid_mode_card_img .grid_mode_card_info .today_stats span.video:before, .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards .grid_mode_card .grid_mode_card_img .grid_mode_card_info .earlier_stats span.video:before {
+                    content: ""; }
+              .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards .grid_mode_card .grid_mode_card_img .grid_mode_card_info .today_stats {
+                margin-bottom: 22px; }
+              .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards .grid_mode_card .grid_mode_card_img .grid_mode_card_info .earlier_stats {
+                margin-bottom: 28px; }
+              .main_block .list_mode .tabs_body .tabs_content .grid_mode_cards .grid_mode_card .grid_mode_card_img .grid_mode_card_info p {
+                font-family: "Proxima Nova Lt";
+                font-size: 17px;
+                font-weight: 600;
+                color: #fff;
+                text-align: center; }
+      .main_block .list_mode .tabs_body .tabs_content .list_mode_cards {
+        margin-bottom: 45px; }
+        .main_block .list_mode .tabs_body .tabs_content .list_mode_cards .list_mode_card {
+          background-color: #fff;
+          margin-bottom: 10px;
+          padding-right: 92px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          @media screen and (max-width: 640px) {
+            .main_block .list_mode .tabs_body .tabs_content .list_mode_cards .list_mode_card {
+              padding-right: 50px; } }
+          @media screen and (max-width: 450px) {
+            .main_block .list_mode .tabs_body .tabs_content .list_mode_cards .list_mode_card {
+              padding-right: 20px; } }
+          @media screen and (max-width: 375px) {
+            .main_block .list_mode .tabs_body .tabs_content .list_mode_cards .list_mode_card {
+              padding-right: 10px; } }
+          @media screen and (max-width: 360px) {
+            .main_block .list_mode .tabs_body .tabs_content .list_mode_cards .list_mode_card {
+              padding-right: 5px; } }
+          .main_block .list_mode .tabs_body .tabs_content .list_mode_cards .list_mode_card .list_mode_card_img {
+            display: flex;
+            align-items: center; }
+            .main_block .list_mode .tabs_body .tabs_content .list_mode_cards .list_mode_card .list_mode_card_img img {
+              display: inline-block;
+              width: 100%; }
+            .main_block .list_mode .tabs_body .tabs_content .list_mode_cards .list_mode_card .list_mode_card_img .today_activity {
+              margin-left: 35px; }
+              @media screen and (max-width: 450px) {
+                .main_block .list_mode .tabs_body .tabs_content .list_mode_cards .list_mode_card .list_mode_card_img .today_activity {
+                  margin-left: 18px; } }
+              @media screen and (max-width: 375px) {
+                .main_block .list_mode .tabs_body .tabs_content .list_mode_cards .list_mode_card .list_mode_card_img .today_activity {
+                  margin-left: 10px; } }
+              @media screen and (max-width: 360px) {
+                .main_block .list_mode .tabs_body .tabs_content .list_mode_cards .list_mode_card .list_mode_card_img .today_activity {
+                  margin-left: 5px; } }
+          .main_block .list_mode .tabs_body .tabs_content .list_mode_cards .list_mode_card .when_upload p {
+            font-family: "Helvetica Neue";
+            font-weight: bold;
+            color: #343537;
+            font-size: 17px; }
+            @media screen and (max-width: 450px) {
+              .main_block .list_mode .tabs_body .tabs_content .list_mode_cards .list_mode_card .when_upload p {
+                font-size: 14px; } }
+            @media screen and (max-width: 375px) {
+              .main_block .list_mode .tabs_body .tabs_content .list_mode_cards .list_mode_card .when_upload p {
+                font-size: 13px; } }
+            @media screen and (max-width: 320px) {
+              .main_block .list_mode .tabs_body .tabs_content .list_mode_cards .list_mode_card .when_upload p {
+                font-size: 10px; } }
+          .main_block .list_mode .tabs_body .tabs_content .list_mode_cards .list_mode_card h5 {
+            font-family: "Proxima Nova Rg";
+            font-weight: 600;
+            font-size: 17px;
+            color: #343537;
+            margin-bottom: 14px; }
+            @media screen and (max-width: 450px) {
+              .main_block .list_mode .tabs_body .tabs_content .list_mode_cards .list_mode_card h5 {
+                margin-right: 10px;
+                margin-bottom: 10px;
+                font-size: 14px; } }
+            @media screen and (max-width: 375px) {
+              .main_block .list_mode .tabs_body .tabs_content .list_mode_cards .list_mode_card h5 {
+                font-size: 13px; } }
+            @media screen and (max-width: 360px) {
+              .main_block .list_mode .tabs_body .tabs_content .list_mode_cards .list_mode_card h5 {
+                font-size: 12px; } }
+            @media screen and (max-width: 320px) {
+              .main_block .list_mode .tabs_body .tabs_content .list_mode_cards .list_mode_card h5 {
+                font-size: 10px; } }
+          .main_block .list_mode .tabs_body .tabs_content .list_mode_cards .list_mode_card span {
+            font-family: "Proxima Nova Rg";
+            font-weight: bold;
+            font-size: 17px;
+            color: #343537;
+            margin-right: 30px; }
+            @media screen and (max-width: 450px) {
+              .main_block .list_mode .tabs_body .tabs_content .list_mode_cards .list_mode_card span {
+                font-size: 14px; } }
+            @media screen and (max-width: 375px) {
+              .main_block .list_mode .tabs_body .tabs_content .list_mode_cards .list_mode_card span {
+                font-size: 13px; } }
+            @media screen and (max-width: 320px) {
+              .main_block .list_mode .tabs_body .tabs_content .list_mode_cards .list_mode_card span {
+                font-size: 10px; } }
+            .main_block .list_mode .tabs_body .tabs_content .list_mode_cards .list_mode_card span:before {
+              content: "";
+              font-family: Font Awesome\ 5 Free;
+              font-weight: 900;
+              font-size: 20px;
+              color: #343537;
+              margin-right: 6px; }
+              @media screen and (max-width: 450px) {
+                .main_block .list_mode .tabs_body .tabs_content .list_mode_cards .list_mode_card span:before {
+                  font-size: 16px; } }
+              @media screen and (max-width: 375px) {
+                .main_block .list_mode .tabs_body .tabs_content .list_mode_cards .list_mode_card span:before {
+                  font-size: 14px; } }
+            .main_block .list_mode .tabs_body .tabs_content .list_mode_cards .list_mode_card span:nth-child(odd):before {
+              content: ""; }
+    .main_block .list_mode .load_more {
+      text-align: center; }
+      .main_block .list_mode .load_more a {
+        display: inline-block;
+        font-family: "Proxima Nova Rg";
+        font-size: 12px;
+        color: #000;
+        text-decoration: none;
+        text-transform: uppercase;
+        line-height: 30px;
+        padding: 0 30px;
+        background-color: transparent;
+        border: solid 1px #000;
+        border-radius: 10px;
+        margin-bottom: 74px;
+        transition: all 1s ease-in-out; }
+        .main_block .list_mode .load_more a:hover {
+          color: #fff;
+          background-color: #000;
+          transition: all 1s ease-in-out; }
+
+/*# sourceMappingURL=style.css.map */
